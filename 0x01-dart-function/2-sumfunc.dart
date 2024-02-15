@@ -14,5 +14,5 @@ String sub(int a, int b) {
 String showFunc(int a, int b) {
   String sumMessage = add(a, b).split(',').last;
   String diffMessage = sub(a, b).split(',').last;
-  return '$sumMessage, $diffMessage';
+  return '$sumMessage\n$diffMessage';
 }
