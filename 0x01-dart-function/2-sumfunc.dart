@@ -1,13 +1,13 @@
 // returns the sum and a message
 String add(int a, int b) {
   int output = a + b;
-  return '$output, Add $a + $b = $output';
+  return '$output,Add $a + $b = $output';
 }
 
 // returns the difference and a message
 String sub(int a, int b) {
   int output = a - b;
-  return '$output, Sub $a - $b = $output';
+  return '$output,Sub $a - $b = $output';
 }
 
 // returns a message with the output of the two other functions
