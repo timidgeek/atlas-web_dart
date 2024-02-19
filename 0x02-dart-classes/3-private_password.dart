@@ -2,9 +2,8 @@ class Password {
   // initialize properties
   String _password = '';
 
-  // getter and setter for password
-  String get password => _password;
-  set password(String value) => _password = value;
+  // private constructor to set the initial value of _password
+  Password({required String password}) : _password = password;
 
   // method to check if the password is valid
   bool isValid() {
