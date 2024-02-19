@@ -10,12 +10,12 @@ class User {
   User({required this.name, required this.age, required this.height});
   
   // method to convert to JSON
-  String toJson() {
-    Map<String, dynamic> jsonMap = {
-      'name': name,
-      'age': age,
-      'height': height,
-    };
-    return json.encode(jsonMap);
-  }
+  Map<String, dynamic> toJson() {
+      Map<String, dynamic> jsonMap = {
+        'name': name,
+        'age': age,
+        'height': height,
+      };
+      return jsonMap;
+    }
 }
