@@ -2,7 +2,7 @@ import 'dart:convert';
 import '4-util.dart';
 
 // calculates total price of items for a certain user
-Future<double> calculateTotal() async {
+Future<num> calculateTotal() async {
   try { 
     // get user id
     String userData = await fetchUserData();
