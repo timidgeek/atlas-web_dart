@@ -7,16 +7,19 @@ class User extends Password {
   int age = 0;
   double height = 0.0;
   int id = 0;
-  String user_password = '';
   
   // constructor
   User({required this.name, 
         required this.age, 
         required this.height, 
         required this.id,
-        required this.user_password,
+        String user_password = '',
     }) : super(password: user_password); // initialize password with new instance of Password class
 
+    // getter method to access password validation status
+    bool get isPasswordValid => isValid();
+    String get user_password => this.password;
+    set user_password(String newPassword) => this.password = newPassword;
   
   // method to convert to JSON
   Map<String, dynamic> toJson() {
@@ -26,6 +29,7 @@ class User extends Password {
         'age': age,
         'height': height,
       };
+      return jsonMap;
     }
   
 
@@ -35,7 +39,7 @@ class User extends Password {
       name: userJson['name'],
       age: userJson['age'],
       height: userJson['height'],
-      user_password: userJson['password'],
+      user_password: userJson['user_password'],
     );
   }
 
@@ -43,6 +47,6 @@ class User extends Password {
   // override toString method
   @override
   String toString() {
-    return 'User(id : $id ,name: $name, age: $age, height: $height, Password: ${user_password.password})';
+    return 'User(id : $id ,name: $name, age: $age, height: $height, Password: ${isPasswordValid})';
   }
 }
