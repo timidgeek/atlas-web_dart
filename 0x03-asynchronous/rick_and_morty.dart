@@ -2,11 +2,12 @@
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-Future<String> printRmCharacters() async {
-  // ping the api
-  var response = await http.get(Uri.parse('https://rickandmortyapi.com/'));
+Future<void> printRmCharacters() async {
 
   try {
+    // ping the api
+    var response = await http.get(Uri.parse('https://rickandmortyapi.com/api/character'));
+
     // parse the JSON response
     var jsonData = json.decode(response.body);
 
@@ -16,12 +17,10 @@ Future<String> printRmCharacters() async {
     // iterate over the list of characters and print their names
     for (var character in characters) {
       String name = character['name'];
-      print('Name: $name');
+      print('$name');
     }
   
-    // return an empty string to satisfy the return type
-    return '';
   } catch (e) {
-    return ('error caught: $e');
+    print('error caught: $e');
   }
 }
