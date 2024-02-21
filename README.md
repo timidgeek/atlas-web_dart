@@ -34,4 +34,4 @@ Flutter is a UI framework for building natively compiled applications for mobile
 
 ## Contributors: :sparkles:
 
-:star: **Lindsey Thomas** | [timidgeek.com]("timidgeek.com/")
+:star: **Lindsey Thomas** | [timidgeek.com]("https://timidgeek.com/")
