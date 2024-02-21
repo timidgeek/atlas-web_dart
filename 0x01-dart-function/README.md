@@ -22,4 +22,4 @@ return_type function_name ( parameters ) {
 
 ## Contributors: :pencil2:
 
-:star: **Lindsey Thomas** | [timidgeek.com]("timidgeek.com/")
+:star: **Lindsey Thomas** | [timidgeek.com](https://timidgeek.com/)

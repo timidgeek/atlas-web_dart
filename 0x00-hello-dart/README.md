@@ -14,4 +14,4 @@ Dart is a programming language made by Google. This repository is the very first
 
 ## Contributors: :pencil2:
 
-:star: **Lindsey Thomas** | [timidgeek.com]("timidgeek.com/")
+:star: **Lindsey Thomas** | [timidgeek.com](https://timidgeek.com/)

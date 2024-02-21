@@ -25,4 +25,4 @@ class Dog extends Animal {
 
 ## Contributors: :pencil2:
 
-:star: **Lindsey Thomas** | [timidgeek.com]("timidgeek.com/")
+:star: **Lindsey Thomas** | [timidgeek.com](https://timidgeek.com/)

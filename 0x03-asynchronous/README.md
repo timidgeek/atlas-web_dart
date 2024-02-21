@@ -33,4 +33,4 @@ Here are the main concepts related to asynchronous operations in Dart:
 
 ## Contributors :pencil2:
 
-:star: **Lindsey Thomas** | [timidgeek.com]("timidgeek.com/")
+:star: **Lindsey Thomas** | [timidgeek.com](https://timidgeek.com/)
